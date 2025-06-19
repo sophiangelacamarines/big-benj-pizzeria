@@ -1,0 +1,167 @@
+<!-- 
+    Group no.: 5
+    Section: IT11S3
+    Date: November 22, 2021
+    Big Benj Pizzeria (Order Now)
+ -->
+ 
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Big Benj Pizzeria - Order Now</title>
+
+	<!-- Order Now CSS file link -->
+    <link rel="stylesheet" href="css/style_order.css">
+
+    <!-- Font Awesome CDN link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+	<!-- Start Header -->
+    <header class="header">
+        <a href="#" class="logo"><img src="images/logo.png" alt="big benj pizzeria"></a>
+        <h1>Big Benj Pizzeria</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="order.html">Order Now</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+	<!-- Start Order Now Form -->
+	<center>
+		<section>
+			<div>
+				<form name="form" class="form" id="form">
+					<h1>Order Now</h1><br>
+			
+					<table align="center">
+						<tr>
+							<td align="right"><label>*Name</label></td>
+							<td align="center"><input type="text" name="name" id="name" placeholder="Name" required></td>
+					
+							<td align="right"><label>*Contact Number</label></td>
+							<td align="center"><input type="text" name="contno" id="contno" placeholder="Contact Number" required></td>
+						</tr>
+						<tr>
+							<td align="right">*Address</td>
+							<td align="center"><input type="text" name="add" id="add" placeholder="Address" required></td>
+
+							<td align="right">*Email</td>
+							<td align="center"><input type="text" name="email" id="email" placeholder="Email" required></td>
+						</tr>
+						<tr>
+							<td align="right">*Town/city</td>
+							<td align="center"><input type="text" name="place" id="place" placeholder="Town/City" required></td>
+						</tr>
+						<tr>
+							<td align="right">*Postcode</td>
+							<td align="center"><input type="text" name="code" id="code" placeholder="Postcode" required></td>
+						</tr>
+					</table>
+
+					<br>
+
+					*required fields
+
+					<br><br>
+
+					<table>
+						<th>Topping</th>
+						<th>Size</th>
+						<th>Extras</th>
+						<tr>
+							<td><input type=radio name="top" id="top" onclick="radTop();" required>Pineapples</td>
+							<td><input type=radio name="size" id="size" required>Small</td>
+							<td><input type=checkbox name="ex" id="ex">Anchovies</td>
+						</tr>
+						<tr>
+							<td><input type=radio name="top" id="top" onclick="radTop();" required>Meat Feast</td>
+							<td><input type=radio name="size" id="size" required>Medium</td>
+							<td><input type=checkbox name="ex" id="ex">Mushrooms</td>
+						</tr>
+						<tr>
+							<td><input type=radio name="top" id="top" onclick="radTop();" required>Four Seasons</td>
+							<td><input type=radio name="size" id="size" required>Large</td>
+							<td><input type=checkbox name="ex" id="ex">Green peppers</td>
+						</tr>
+						<tr>
+							<td><input type=radio name="top" id="top" onclick="radTop();" required>Margherita</td>
+							<td></td>							
+							<td><input type=checkbox name="ex" id="ex">Cheese</td>
+						</tr>
+					</table>
+
+					<br>
+
+					<table>
+						<th></th>
+						<th>&emsp; &emsp; &emsp; Crust Type</th>
+						<tr>
+							<td><input type=radio name="crust" id="crust" required>Soft Pan</td>
+							<td><input type=radio name="crust" id="crust" required>Stuffed</td>
+							<td><input type=radio name="crust" id="crust" required>Sausage</td>
+						</tr>
+						<tr>
+							<td><input type=radio name="crust" id="crust" required>Thick</td>
+							<td><input type=radio name="crust" id="crust" required>Deep Dish</td>
+							<td><input type=radio name="crust" id="crust" required>Sausage & Cheese</td>
+						</tr>
+						<td><input type=radio name="crust" id="crust" required>Crispy Thin</td>
+							<td><input type=radio name="crust" id="crust" required>Extreme Cheese</td>
+							<td><input type=radio name="crust" id="crust" required>Flat Bread</td>
+					</table>
+
+					<br>
+
+					<table>
+						<tr>
+							<td>Preferred delivery time:</td>
+							<td><input type="time" name="time" required></td>						
+						</tr>
+						<tr>
+							<td>Delivery instructions:</td>
+							<td><textarea id="message" placeholder="Your Message" rows="2" required></textarea></td>						
+						</tr>
+					</table>
+
+					<br>
+
+					<button class="center" onclick="display()">Submit</button>
+				</form>
+			</div>
+		</section>
+	</center>
+	<br><br><br>
+	<!-- End Order Now Form -->
+
+	<!-- Start Footer -->
+    <section class="footer">
+        <div class="socmed">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="fab fa-instagram"></a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="fab fa-twitter"></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">Made and Developed by <span>Group 5 - IT11S3</span> | Instructor: Mr. <span>Benjamin Gandeza</span></div>
+    </section>
+    <!-- End Footer -->
+
+	<!-- Start Submit Button Javascript -->
+	<script>
+		function display(){
+			alert("The form has been submitted. Please wait for further details via SMS or Email.");
+		}
+	</script>
+	<!-- End Submit Button Javascript -->
+</body>
+
+</html>

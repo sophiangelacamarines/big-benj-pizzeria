@@ -1,0 +1,326 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root{
+    --main-color:#ec9f05;
+    --black:#13131a;
+    --header:#C04000;
+    --bg:#ff4e00;
+    --change: #ffb347;
+    --border:.1rem solid rgba(255,255,255,.6);
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+    background: linear-gradient(-45deg, #13131a, #ff4e00, #C04000);
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(36, 26, 26);
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+    margin: 0;
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.title{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.home-btn{
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    background: var(--main-color);
+    color:#fff;
+    cursor: pointer;
+}
+
+.home-btn:hover{
+    background: var(--change);
+}
+
+.header{
+    background: var(--header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid var(--main-color);
+}
+
+.header h1{
+    color: #fff;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    background: url(../images/pizza.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+}
+
+.home .content{
+    max-width: 60rem;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    color: #fff;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.pizzeria .row{
+    display: flex;
+    align-items: center;
+    background: var(--header);
+    flex-wrap: wrap;
+}
+
+.pizzeria .row .image{
+    text-align: center;
+    flex:1 1 45rem;
+}
+
+.pizzeria .row .image img{
+    width: 80%;
+    height: 80%;
+}
+.pizzeria .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.pizzeria .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.pizzeria .row .content p{
+    font-size: 1.8rem;
+    color:#fff;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.feature .row{
+    display: flex;
+    align-items: center;
+    background: var(--header);
+    flex-wrap: wrap;
+}
+
+.feature .row .image{
+    text-align: center;
+    flex:1 1 45rem;
+}
+
+.feature .row .image img{
+    width: 80%;
+    height: 80%;
+}
+.feature .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.feature .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.feature .row .content p{
+    font-size: 1.8rem;
+    color:#fff;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.feature2 .row2{
+    display: flex;
+    align-items: center;
+    background: var(--header);
+    flex-wrap: wrap;
+}
+
+.feature2 .row2 .image{
+    text-align: center;
+    flex:1 1 45rem;
+}
+
+.feature2 .row2 .image img{
+    width: 80%;
+    height: 80%;
+}
+.feature2 .row2 .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.feature2 .row2 .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.feature2 .row2 .content p{
+    font-size: 1.8rem;
+    color:#fff;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.footer{
+    background:var(--black);
+    text-align: center;
+}
+
+.footer .socmed{
+    padding:1rem 0;
+}
+
+.footer .socmed a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.footer .socmed a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 1.6rem;
+    color:#fff;
+    font-weight: lighter;
+    padding: 1.2rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+    
+}
+
+@media (max-width:768px){
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    .home{
+        background-position: center;
+        text-align: right;
+    }
+
+    .home .content h3{
+        font-size: 5.8rem;
+    }
+
+    .home .content p{
+        font-size: 1.7rem;
+    }
+
+    .pizzeria{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pizzeria .content h3{
+        font-size: 4.5rem;
+    }
+
+    .pizzeria .content p{
+        font-size: 1.5rem;
+    }
+
+}

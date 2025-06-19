@@ -1,0 +1,106 @@
+<!-- 
+    Group no.: 5
+    Section: IT11S3
+    Date: November 22, 2021
+    Big Benj Pizzeria (Gallery)
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Benj Pizzeria - Gallery</title>
+ 
+    <!-- Gallery CSS file link -->
+    <link rel="stylesheet" href="css/style_gallery.css">
+
+    <!-- Font Awesome CDN link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <a href="#" class="logo"><img src="images/logo.png" alt="big benj pizzeria"></a>
+        <h1>Big Benj Pizzeria</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="order.html">Order Now</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+        </nav>
+    </header>
+    <!-- End Header -->
+ 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="text-box">
+                    <h5>Our Pizzas</h5>
+                    <h1>More than a <b>hundred flavors</b> in <b>one place.</b></h1>
+                </div>
+                    <img src="images/circle.png" class="small-icon1">
+                    <img src="images/circle.png" class="small-icon2">
+                    <img src="images/square.png" class="small-icon3">
+                </div>
+                <div class="col">  
+                    <div class="gallery-box">
+                        <img src="images/1.jpg" id="gallery">
+                        <ul>
+                            <li class="btn active">01</li>
+                            <li class="btn">02</li>
+                            <li class="btn">03</li>
+                            <li class="btn">04</li>
+                            <li class="btn">05</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/circle.png" class="small-icon4">
+                <img src="images/square.png" class="small-icon5">
+            </div>
+        </div>
+    </div>
+         
+         
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var gallery = document.getElementById("gallery");
+ 
+        var images = new Array(
+            "images/1.jpg",
+            "images/2.jpg",
+            "images/3.jpg",
+            "images/4.jpg",
+            "images/5.jpg"
+        );
+ 
+        for(let i=0; i<btn.length; i++){
+            btn[i].onclick = function(){
+                gallery.src = images[i];
+                let current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += " active";
+            };
+        }
+    </script>
+ 
+    <!-- Start Footer -->
+    <section class="footer">
+        <div class="socmed">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="fab fa-instagram"></a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="fab fa-twitter"></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">Made and Developed by <span>Group 5 - IT11S3</span> | Instructor: Mr. <span>Benjamin Gandeza</span></div>
+    </section>
+    <!-- End Footer -->
+</body>
+
+</html>
