@@ -1,0 +1,88 @@
+<!-- 
+    Group no.: 5
+    Section: IT11S3
+    Date: November 22, 2021
+    Big Benj Pizzeria (Contact Us)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Benj Pizzeria - Contact Us</title>
+
+    <!-- Contact Us CSS file link -->
+    <link rel="stylesheet" href="css/style_contact.css">
+
+    <!-- Font Awesome CDN link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <a href="#" class="logo"><img src="images/logo.png" alt="big benj pizzeria"></a>
+        <h1>Big Benj Pizzeria</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="order.html">Order Now</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Contact Us Form -->
+    <br><br><br><br><br>
+    <div id="overlay">
+        <form name="contact-form" class="form" id="form" onsubmit="return validForm()">
+            <h1>Contact Us</h1>
+            <br>
+            <p>Hello! Feel free to reach out by sending a message using the form below.
+                We are open to any queries, informations or feedbacks. Thank you!
+            </p>
+            <div class="form-field">
+                <label>*Name:</label>
+                <input type="text" name="email" class="name" id="name" placeholder="Your Name" required>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label>*Email:</label>
+                <input type="text" name="email" class="email" id="email" placeholder="Your E-mail" required>
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label>*Message:</label>
+                <textarea name="message" class="message" id="message" placeholder="Your Message" rows="6" required></textarea> 
+                <small></small>
+            </div>
+            <div class="submit">
+                <button class="center" id="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+    <br><br><br><br><br>
+    <!-- End Contact Us Form -->
+
+    <!-- Start Footer -->
+    <section class="footer">
+        <div class="socmed">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="fab fa-instagram"></a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="fab fa-twitter"></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">Made and Developed by <span>Group 5 - IT11S3</span> | Instructor: Mr. <span>Benjamin Gandeza</span></div>
+    </section>
+    <!-- End Footer -->
+    </div>
+
+    <!-- Contact Us Javascript file link -->
+    <script src="js/script_contact.js"></script>
+</body>
+
+</html>
